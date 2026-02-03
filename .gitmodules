@@ -1,0 +1,15 @@
+[submodule "Aggregation-Service"]
+	path = Aggregation-Service
+	url = https://github.com/SalehAlobaylan/Aggregation-Service
+[submodule "CRM-Service"]
+	path = CRM-Service
+	url = https://github.com/SalehAlobaylan/CRM-Service
+[submodule "Content-Management-System"]
+	path = Content-Management-System
+	url = https://github.com/SalehAlobaylan/Content-Management-System
+[submodule "Platform-Console"]
+	path = Platform-Console
+	url = https://github.com/SalehAlobaylan/Platform-Console
+[submodule "Wahb-Platform"]
+	path = Wahb-Platform
+	url = https://github.com/SalehAlobaylan/Wahb-Platform
