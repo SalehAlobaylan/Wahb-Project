@@ -130,6 +130,15 @@ Authorization: Bearer <jwt_token>
 - 401: Missing/invalid/expired token
 - 403: Forbidden (disabled account)
 
+#### Admin User Management
+
+- `GET /admin/users` - List admin users (supports pagination, search, role/status filters)
+- `POST /admin/users` - Create admin user
+- `GET /admin/users/:id` - Get admin user
+- `PUT /admin/users/:id` - Update admin user
+- `DELETE /admin/users/:id` - Delete admin user
+- `POST /admin/users/:id/password` - Reset admin password
+
 ### CRM Admin Endpoints
 
 #### GET /admin/me
@@ -152,6 +161,19 @@ Authorization: Bearer <jwt_token>
   "permissions": [...]
 }
 ```
+
+---
+
+## Platform Console Admin UI
+
+- Route: `/admin/users`
+- Features:
+  - List admin users with search, role and status filters
+  - Create new admin user (email, role, password, permissions, active)
+  - Edit admin user (email, role, permissions, active)
+  - Reset password
+  - Delete admin user
+- Access control: only `admin` role sees the page
 
 ---
 
