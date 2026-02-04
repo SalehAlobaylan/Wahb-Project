@@ -9,6 +9,7 @@ This document covers common commands for working with git submodules in the Wahb
 | Command | Task |
 |---------|------|
 | `git submodule update --init --recursive` | Initialize all submodules (first time setup) |
+| `git submodule foreach 'git checkout main'` | Checkout main branch for all submodules |
 | `git clone --recurse-submodules <url>` | Clone repo with all submodules in one command |
 | `git submodule status` | View status of all submodules |
 | `git submodule foreach 'echo $path'` | List all submodule paths |
