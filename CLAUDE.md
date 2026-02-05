@@ -21,10 +21,10 @@
 
 | File | Purpose |
 |------|---------|
-| `Turfa_Overall_Project_Context_Requirements.md` | Complete architecture, service boundaries, API contracts |
-| `LLM_Context_Requirements.md` | Service boundaries, data contracts, agent rules |
+| `Wahb_Overall_Project_Context_Requirements.md` | Complete architecture, service boundaries, API contracts |
+| `AI_Agent_Context_Requirements.md` | Service boundaries, data contracts, agent rules |
 | `PRD.md` | Product requirements, feed specs, success metrics |
-| `Turfa_Platform_Context_Requirements .md` | Frontend implementation (Next.js, feeds, UI) |
+| `Wahb_Platform_Context_Requirements .md` | Frontend implementation (Next.js, feeds, UI) |
 | `CMS_Context_Requirements.md` | Go CMS/Feed Service (endpoints, models, DB schema) |
 | `Aggregation_Service_Context_Requirements.md` | Node.js workers (ingestion, FFmpeg, embeddings) |
 | `Platform_Console_Context_Requirements.md` | Admin UI (CMS + CRM integration, auth flow) |
@@ -104,7 +104,7 @@ Please:
 1. Read [service]/context/[relevant_context_file].md
 2. Understand service's responsibilities and boundaries
 3. Check if feature fits (no crossing service boundaries)
-4. Reference API contracts from Turfa_Overall_Project_Context_Requirements.md
+4. Reference API contracts from Wahb_Overall_Project_Context_Requirements.md
 5. Suggest implementation approach
 ```
 
@@ -126,7 +126,7 @@ Please:
 I need to change [something] that affects multiple services.
 
 Please:
-1. Read Turfa_Overall_Project_Context_Requirements.md for architecture
+1. Read Wahb_Overall_Project_Context_Requirements.md for architecture
 2. Identify which services are affected
 3. Check service boundaries for each
 4. Suggest changes to each service respecting their boundaries
@@ -168,13 +168,13 @@ Please:
 
 | Task | Read Context In... |
 |------|-------------------|
-| Frontend feeds/UI | `Wahb-Platform/context/Turfa_Platform_Context_Requirements .md` |
+| Frontend feeds/UI | `Wahb-Platform/context/Wahb_Platform_Context_Requirements .md` |
 | CMS APIs, feeds | `Content-Management-System/context/CMS_Context_Requirements.md` |
 | Ingestion, media | `Aggregation-Service/context/Aggregation_Service_Context_Requirements.md` |
 | Admin dashboard | `Platform-Console/context/Platform_Console_Context_Requirements.md` |
 | CRM features | `CRM-Service/context/CRM_Context_Requirements.md` |
-| Architecture, boundaries | Any `context/Turfa_Overall_Project_Context_Requirements.md` |
-| Agent rules | Any `context/LLM_Context_Requirements.md` |
+| Architecture, boundaries | Any `context/Wahb_Overall_Project_Context_Requirements.md` |
+| Agent rules | Any `context/AI_Agent_Context_Requirements.md` |
 
 ---
 
@@ -195,7 +195,7 @@ Always check this table before working on CRM features.
 ❌ **Asking Aggregation to serve user APIs** → This is CMS's job
 ❌ **Asking Console to directly access queues** → Use CMS admin APIs instead
 ❌ **Asking CRM to handle content ingestion** → CRM only does CRM workflows
-❌ **Forgetting to check service boundaries** → Read LLM_Context_Requirements.md first
+❌ **Forgetting to check service boundaries** → Read AI_Agent_Context_Requirements.md first
 
 ✅ **Ask CMS to serve feeds** → Core responsibility
 ✅ **Ask Aggregation to process media** → Core responsibility
@@ -225,7 +225,7 @@ git status
 ### View context files
 ```bash
 # Overall architecture
-cat [module]/context/Turfa_Overall_Project_Context_Requirements.md
+cat [module]/context/Wahb_Overall_Project_Context_Requirements.md
 
 # Service-specific
 cat [module]/context/[Service]_Context_Requirements.md

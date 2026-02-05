@@ -40,8 +40,8 @@ Wahb-Project/
 ```
 
 **Context Files:**
-- `Turfa_Overall_Project_Context_Requirements.md` - Complete project context, architecture
-- `Turfa_Platform_Context_Requirements .md` - Frontend implementation details
+- `Wahb_Overall_Project_Context_Requirements.md` - Complete project context, architecture
+- `Wahb_Platform_Context_Requirements .md` - Frontend implementation details
 - `PRD.md` - Product Requirements Document
 - `LLM_Context_Requirements.md` - AI agent guidelines and constraints
 - `Aggregation_Service_Context_Requirements.md` - Worker fleet requirements
@@ -71,7 +71,7 @@ Wahb-Project/
 I need to modify the [For You/News] feed UI in Wahb-Platform.
 Current implementation uses Next.js 15, React 19, shadcn/ui, Zustand, and TanStack Query.
 Please reference:
-- Wahb-Platform/context/Turfa_Platform_Context_Requirements .md
+- Wahb-Platform/context/Wahb_Platform_Context_Requirements .md
 - Wahb-Platform/context/PRD.md
 ```
 
@@ -82,7 +82,7 @@ I need to add/update [feed endpoints/content retrieval/interactions] in CMS.
 Current stack: Go + Gin + GORM + PostgreSQL + pgvector.
 Please reference:
 - Content-Management-System/context/CMS_Context_Requirements.md
-- Content-Management-System/context/Turfa_Overall_Project_Context_Requirements.md
+- Content-Management-System/context/Wahb_Overall_Project_Context_Requirements.md
 ```
 
 ### For Aggregation-Service (Workers)
@@ -112,7 +112,7 @@ I need to add/update [customers/contacts/deals/activities] in CRM Service.
 Current stack: Go + Gin + GORM + PostgreSQL + JWT auth (HS256).
 Please reference:
 - CRM-Service/context/CRM_Context_Requirements.md
-- CRM-Service/context/Turfa_Overall_Project_Context_Requirements.md
+- CRM-Service/context/Wahb_Overall_Project_Context_Requirements.md
 ```
 
 ---
@@ -176,7 +176,7 @@ Please:
 I have a question about the overall Wahb platform architecture.
 
 Please reference:
-- Any module's context/Turfa_Overall_Project_Context_Requirements.md
+- Any module's context/Wahb_Overall_Project_Context_Requirements.md
 - context/LLM_Context_Requirements.md
 
 Focus on:
@@ -280,21 +280,21 @@ Never ask a service to do something outside its scope. For example:
 ### Module Mapping
 | If working on... | Reference context in... |
 |----------------|------------------------|
-| Frontend UI (feeds) | `Wahb-Platform/context/Turfa_Platform_Context_Requirements .md` |
+| Frontend UI (feeds) | `Wahb-Platform/context/Wahb_Platform_Context_Requirements .md` |
 | Feed APIs / Content CRUD | `Content-Management-System/context/CMS_Context_Requirements.md` |
 | Content ingestion / Media processing | `Aggregation-Service/context/Aggregation_Service_Context_Requirements.md` |
 | Admin dashboard UI | `Platform-Console/context/Platform_Console_Context_Requirements.md` |
 | CRM workflows | `Platform-Console/context/CRM_Context_Requirements.md` or `CRM-Service/context/CRM_Context_Requirements.md` |
-| System architecture | Any `context/Turfa_Overall_Project_Context_Requirements.md` |
+| System architecture | Any `context/Wahb_Overall_Project_Context_Requirements.md` |
 | AI agent guidelines | Any `context/LLM_Context_Requirements.md` |
 
 ### File Structure Reminder
 ```
 context/
-├── Turfa_Overall_Project_Context_Requirements.md    # Start here for architecture
+├── Wahb_Overall_Project_Context_Requirements.md    # Start here for architecture
 ├── LLM_Context_Requirements.md                   # AI agent rules
 ├── PRD.md                                        # Product requirements
-├── Turfa_Platform_Context_Requirements .md         # Frontend only
+├── Wahb_Platform_Context_Requirements .md         # Frontend only
 ├── CMS_Context_Requirements.md                     # Backend (CMS)
 ├── Aggregation_Service_Context_Requirements.md       # Workers
 ├── Platform_Console_Context_Requirements.md        # Admin UI

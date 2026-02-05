@@ -9,14 +9,14 @@ A mobile-first social platform combining immersive audio discovery with premium 
 ```
 Wahb-Project/
 ├── context/                           # Unified context files for all modules
-│   ├── Turfa_Overall_Project_Context_Requirements.md
+│   ├── Wahb_Overall_Project_Context_Requirements.md
 │   ├── LLM_Context_Requirements.md
 │   ├── PRD.md
 │   ├── CMS_Context_Requirements.md
 │   ├── CRM_Context_Requirements.md
 │   ├── Aggregation_Service_Context_Requirements.md
 │   ├── Platform_Console_Context_Requirements.md
-│   └── Turfa_Platform_Context_Requirements .md
+│   └── Wahb_Platform_Context_Requirements .md
 ├── Aggregation-Service/               # Content ingestion worker fleet
 ├── Content-Management-System/           # Go backend (CMS + Feed Service)
 ├── CRM-Service/                         # Go backend (CRM workflows)
@@ -34,7 +34,7 @@ Wahb-Project/
 
 ## Quick Links
 
-- **Project Overview:** `context/Turfa_Overall_Project_Context_Requirements.md`
+- **Project Overview:** `context/Wahb_Overall_Project_Context_Requirements.md`
 - **AI Agent Guide:** `agent.md` or `CLAUDE.md`
 - **Service Boundaries:** `context/LLM_Context_Requirements.md`
 
@@ -51,4 +51,4 @@ All modules contain identical `context/` folders with unified documentation:
 
 ---
 
-*Formerly known as: Turfa / Lumen*
+**Project Name:** Wahb Platform
