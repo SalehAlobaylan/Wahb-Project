@@ -204,6 +204,31 @@ Always check this table before working on CRM features.
 
 ---
 
+## Git Commit Guidelines
+
+**CRITICAL: AI Agent Co-Authorship**
+
+❌ **NEVER add AI agents as co-authors in git commits**
+- Do NOT include `Co-Authored-By: Claude Sonnet` or similar AI attribution
+- Do NOT add AI agents to GitHub commit co-authors
+- All commits should be authored by humans only
+- AI assistance is internal tooling, not a contribution requiring attribution
+
+**Why this matters:**
+- Git commit history should reflect actual human contributors
+- GitHub contributor statistics should represent real contributors
+- AI tools are development aids, not co-authors
+- Legal and IP clarity around code ownership
+
+**Commit Message Format:**
+```bash
+git commit -m "feat: brief description
+
+Detailed explanation of the change and why it was made."
+```
+
+---
+
 ## My Working Style
 
 1. **Always read context files first** - This is non-negotiable
@@ -212,6 +237,7 @@ Always check this table before working on CRM features.
 4. **Reference API contracts** - Especially for cross-service work
 5. **Check implementation status** - Especially for CRM
 6. **Suggest concrete next steps** - Don't just describe concepts
+7. **Never claim AI co-authorship** - AI assists, humans commit
 
 ---
 

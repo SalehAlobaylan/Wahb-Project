@@ -217,7 +217,30 @@ Please:
 
 ## Important Notes for Agents
 
-### 1. Always Read Context First
+### 1. Git Commit Guidelines
+
+**CRITICAL: AI Agent Co-Authorship**
+
+❌ **NEVER add AI agents as co-authors in git commits**
+- Do NOT include `Co-Authored-By: Claude Sonnet` or similar AI attribution
+- Do NOT add AI agents to GitHub commit co-authors
+- All commits should be authored by humans only
+- AI assistance is internal tooling, not a contribution requiring attribution
+
+**Why this matters:**
+- Git commit history should reflect actual human contributors
+- GitHub contributor statistics should represent real contributors
+- AI tools are development aids, not co-authors
+- Legal and IP clarity around code ownership
+
+When creating commits or suggesting commit messages, format them as:
+```bash
+git commit -m "feat: brief description
+
+Detailed explanation of the change."
+```
+
+### 2. Always Read Context First
 Before working on any module, read its `context/` folder to understand:
 - Service responsibilities and boundaries
 - Technology stack
